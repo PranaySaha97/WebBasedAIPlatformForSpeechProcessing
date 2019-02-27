@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Welcome</title>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+</style>
+</head>
+
+
+<body bgcolor="#E8E1BA">
+<div>
+<center><h1 style="color: #FF5733;font-size: 50px;">S J C Institute of Technology</h1>
+<h1 style="color: #8D61B4;">“AI Speech platform for text conversion, authentication and translation using cognitive services”</h1></center>
+</div>
+
+<div>
+<ul>
+<li><a href="{% url 'index' %}">Home</a></li>
+<li><a href="{% url 'about' %}">About</a></li>
+<li><a href="{% url 'contact' %}">Contact Us</a></li>
+</ul>
+</div>
+
+{% block content %}
+{% endblock %}
+
+<body>
+
+
+</html>

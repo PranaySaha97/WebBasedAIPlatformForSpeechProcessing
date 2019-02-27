@@ -1,0 +1,34 @@
+{% extends "UI/home.html" %}
+
+{% block content %}
+<style>
+#recg_div{
+    text-align: center;
+    list-style-position: center;
+    font-size: 25px;
+}
+
+#recrd_btn{
+    background-color: black; 
+    padding: 1em; 
+    border-radius: 6px; 
+    color: #fff; 
+    font-size: 25px;
+    border:none;
+    
+}
+
+#recrd_btn:hover{
+    background-color: gray;
+    cursor: alias;
+}
+</style>
+<div id="recg_div"> 
+    <u><b>Speech Recognition</b></u>
+    <br><br><br>
+    <form action="{% url 'SpeechRecognition' %}">
+        <input type="submit" name="record" value="Start Recording" id="recrd_btn"/><br><br>
+        <p><h1>{{ t }}</h1></p> 
+    </form>
+</div>
+{% endblock %}
