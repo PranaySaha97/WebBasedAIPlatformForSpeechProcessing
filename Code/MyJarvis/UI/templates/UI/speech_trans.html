@@ -1,0 +1,37 @@
+{% extends "UI/home.html" %}
+
+{% block content %}
+<style>
+    #recg_div{
+        text-align: center;
+        list-style-position: center;
+        font-size: 25px;
+    }
+    
+    #recrd_btn{
+        background-color: black; 
+        padding: 1em; 
+        border-radius: 6px; 
+        color: #fff; 
+        font-size: 25px;
+        border:none;
+        
+    }
+    
+    #recrd_btn:hover{
+        background-color: gray;
+        cursor: alias;
+    }
+    </style>
+    <div id="recg_div"> 
+        <u><b>Speech Translation</b></u>
+        <br><br><br>
+        <form action="{% url 'SpeechTranslation' %}">
+            <input type="submit" name="record" value="Start Recording" id="recrd_btn"/><br><br>
+            <p><b>English: {{ eng }}</b><br>
+                <b>Bengali: {{ bong }}</b><br>
+                <b>Hindi: {{ hin }}</b><br>
+                <b>Kannada: {{ kan }}</b><br></p> 
+        </form>
+    </div>
+{% endblock %}
