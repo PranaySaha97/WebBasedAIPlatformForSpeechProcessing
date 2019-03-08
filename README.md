@@ -16,4 +16,4 @@ The front end or the web application is made using Django Framework.
 
 --------------------------------------------
 
-Please feel free to contribute and kindly contact #saha.pranay97@gmail.com (Pranay Saha) for any queries.
+Please feel free to contribute and kindly contact saha.pranay97@gmail.com (Pranay Saha) for any queries.
